@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/HelloServer/HelloServer.iml" filepath="$PROJECT_DIR$/HelloServer/HelloServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello_Server_2/Hello_Server_2.iml" filepath="$PROJECT_DIR$/Hello_Server_2/Hello_Server_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_EE_practical.iml" filepath="$PROJECT_DIR$/Java_EE_practical.iml" />
     </modules>
   </component>
