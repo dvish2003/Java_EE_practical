@@ -16,13 +16,22 @@ import java.io.PrintWriter;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 
-    @WebServlet (urlPatterns = "/h")
+@WebServlet (urlPatterns = "/h")
 public class Main extends HttpServlet {
+
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /*super.doGet(req, resp);*/
+        String Path = req.getServletPath();
+        String url = req.getRequestURI();
+        String Context = req.getContextPath();
+        String Method = req.getMethod();
+
         PrintWriter out = resp.getWriter();
-        out.println("DO GET");
+        out.println("Servlet :"+Path);
+        out.println("url     :"+url);
+        out.println("Context :"+Context);
+        out.println("Method  :"+Method);
 
     }
 
