@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Author: vishmee
@@ -17,6 +18,7 @@ public class MultipleMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         /*super.doGet(req, resp);*/
-
-        System.out.println("Multiple Mapping is Done");}
+PrintWriter out = resp.getWriter();
+out.println("Multiple Mapping is Done");
+        /*System.out.println("Multiple Mapping is Done");*/}
 }
