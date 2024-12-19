@@ -12,7 +12,7 @@ import java.io.IOException;
  * Time: 8:46 AM
  * Description:
  */
-@WebServlet
+@WebServlet(urlPatterns = {"/YY","/ZZ"})
 public class MultipleMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
